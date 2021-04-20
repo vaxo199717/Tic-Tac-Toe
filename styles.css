@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.game-container {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-container .game-board {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 604px;
+  height: 600px;
+}
+
+.game-container .game-board .cell {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 200px;
+  font-size: 100px;
+  text-align: center;
+  border: solid #cacaca;
+}
+
+.game-container .game-board .cell .fa-times {
+  color: red;
+}
+
+.game-container .game-board .cell .fa-circle {
+  color: #006dc7;
+}
+
+.game-container .game-board .cell:last-child {
+  border-width: 1px 0 0 1px;
+}
+
+.game-container .game-board .cell:first-child {
+  border-width: 0 1px 1px 0;
+}
+
+.game-container .game-board .cell:nth-child(2) {
+  border-width: 0 1px 1px 1px;
+}
+
+.game-container .game-board .cell:nth-child(3) {
+  border-width: 0 0 1px 1px;
+}
+
+.game-container .game-board .cell:nth-child(4) {
+  border-width: 1px 1px 1px 0;
+}
+
+.game-container .game-board .cell:nth-child(5) {
+  border-width: 1px;
+}
+
+.game-container .game-board .cell:nth-child(6) {
+  border-width: 1px 0 1px 1px;
+}
+
+.game-container .game-board .cell:nth-child(7) {
+  border-width: 1px 1px 0 0;
+}
+
+.game-container .game-board .cell:nth-child(8) {
+  border-width: 1px 1px 0 1px;
+}
+
+.game-container .winning-board {
+  border: solid #c9c9c9 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  display: none;
+  width: 604px;
+  height: 600px;
+}
+
+.game-container .winning-board .score {
+  padding: 70px 0 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.game-container .winning-board .score div {
+  font-family: 'Zen Dots', cursive;
+  font-size: 40px;
+}
+
+.game-container .winning-board .score div .far {
+  font-size: 37px;
+  color: #006dc7;
+}
+
+.game-container .winning-board .score div .fas {
+  color: red;
+}
+
+.game-container .winning-board .winningMessage {
+  font-family: 'Zen Dots', cursive;
+  text-align: center;
+  padding: 70px 0 70px 0;
+}
+
+.game-container .winning-board .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-container .winning-board .btn-container #playAgain {
+  padding: 6px 14px;
+  cursor: pointer;
+  color: #0059ff;
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  border: solid 1px;
+  border-color: #0059ff;
+}
+/*# sourceMappingURL=styles.css.map */
